@@ -3,3 +3,7 @@
   hosts: dev
   become: yes
   tasks:
+    apt:
+      - name: Update cache
+        update_cache: true
+        
