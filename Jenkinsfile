@@ -9,18 +9,18 @@ pipeline {
             }
         }
 
-        stage('Build') {
-                    steps {
-                        // Copy your HTML files to a web server directory (e.g., Apache's webroot)
-                        sh "echo 'Building'"
+            stage('Build') {
+                        steps {
+                            // Copy your HTML files to a web server directory (e.g., Apache's webroot)
+                            sh "echo 'Building'"
+                        }
                     }
-                }
 
-        stage('Deploy') {
-            steps {
-                // Copy your HTML files to a web server directory (e.g., Apache's webroot)
-                sh "echo 'Copying'"
+            stage('Deploy') {
+                steps {
+                    // Copy your HTML files to a web server directory (e.g., Apache's webroot)
+                    sh "echo 'Copying'"
+                }
             }
-        }
     }
 }
