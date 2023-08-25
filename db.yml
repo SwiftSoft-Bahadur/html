@@ -3,5 +3,3 @@
   hosts: dev
   become: yes
   tasks:
-    apt:
-      - name: update
