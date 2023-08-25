@@ -10,13 +10,13 @@ pipeline {
         }
 
         stage('Build') {
-                steps {
+                    steps {
                         // Copy your HTML files to a web server directory (e.g., Apache's webroot)
                         sh "echo 'Building'"
                     }
                 }
 
-        stage('Deploy HTML') {
+        stage('Deploy') {
             steps {
                 // Copy your HTML files to a web server directory (e.g., Apache's webroot)
                 sh "echo 'Copying'"
