@@ -10,7 +10,7 @@ pipeline {
         }
 
         stage('Build') {
-                    steps {
+                steps {
                         // Copy your HTML files to a web server directory (e.g., Apache's webroot)
                         sh "echo 'Building'"
                     }
